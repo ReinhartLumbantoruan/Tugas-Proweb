@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial scale=1.0">
+    <script>
+        function tambah(){
+            a=document.register.a.value;
+            b=document.register.b.value;
+
+            tambah=Number(a)+ Number(b);
+            alert(a+" + "+b+"="+tambah);
+        }
+        function kurang(){
+            a=document.register.a.value;
+            b=document.register.b.value;
+
+            kurang=Number(a)-Number(b);
+            alert(a+" - "+b+"="+kurang);
+        
+        }
+        function kali(){
+            a=document.register.a.value;
+            b=document.register.b.value;
+
+            kali=Number(a)* Number(b);
+            alert(a+" * "+b+"="+kali);
+        }
+        function bagi(){
+            a=document.register.a.value;
+            b=document.register.b.value;
+
+            bagi=Number(a) / Number(b);
+            alert(a+" / "+b+" = "+bagi);
+        }
+        
+    </script>
+</head>
+<body>
+    <form name="register">
+        <input type="number" name="a" placeholder="masukkan bilangan 1"><br>
+        <input type="number" name="b" placeholder="masukkan bilangan 2"><br>
+        <input type="button" onclick="tambah()" value="+">
+        <input type="button" onclick="kurang()" value="-">
+        <input type="button" onclick="kali()" value="*">
+        <input type="button" onclick="bagi()" value="/">
+    </form>
+</body>
+</html>
